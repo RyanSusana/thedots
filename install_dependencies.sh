@@ -3,7 +3,7 @@ CWD="$HOME/thedots"
 
 if [ "$(uname -s)" = "Linux" ]; then
     sudo apt update
-    sudo apt install -y git-all
+    sudo apt install -y git-all zsh
 fi
 
 git clone https://github.com/RyanSusana/thedots $CWD

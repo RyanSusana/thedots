@@ -14,7 +14,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 rm -f $HOME/.zshrc
 
 # install homebrew
-NONINTERACTIVE=1;/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+yes '' | /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 if [ "$(uname -s)" = "Linux" ]; then
     /home/linuxbrew/.linuxbrew/bin/brew bundle install --file="$CWD/Brewfile"

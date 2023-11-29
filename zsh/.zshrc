@@ -1,3 +1,10 @@
+
+
+
+if [ "$(uname -s)" = "Linux" ]; then
+	export PATH=$PATH:"/home/linuxbrew/.linuxbrew"
+fi
+
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export GOPATH=$HOME/go
 export GOROOT=/usr/local/go
@@ -28,3 +35,4 @@ source $WORKSPACE_MANAGER/init.sh
 
 
 export BAT_THEME=OneHalfDark
+

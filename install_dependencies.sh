@@ -17,9 +17,9 @@ yes '' | /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/i
 
 if [ "$(uname -s)" = "Linux" ]; then
     /home/linuxbrew/.linuxbrew/bin/brew bundle install --file="$CWD/Brewfile"
-    export PATH=$PATH:/home/linuxbrew/.linuxbrew/bin
+    PATH=$PATH:/home/linuxbrew/.linuxbrew/bin
 else
     brew bundle install --file="$CWD/Brewfile"
 fi
 git clone https://github.com/RyanSusana/workspace-manager $HOME/workspace-manager
-source "$CWD/stow.sh"
+source "$HOME/thedots/stow.sh"

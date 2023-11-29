@@ -1,6 +1,13 @@
 #!/bin/bash
 CWD="$HOME/thedots"
 
+if [ "$(uname -s)" = "Linux" ]; then
+    sudo apt update
+    sudo apt install -y git-all
+else
+    brew bundle install --file="$CWD/Brewfile"
+fi
+
 git clone https://github.com/RyanSusana/thedots $CWD
 cd $CWD
 # oh-my-zsh
@@ -12,7 +19,7 @@ rm -f $HOME/.zshrc
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 if [ "$(uname -s)" = "Linux" ]; then
-    $HOME/.linuxbrew/bin/brew bundle install --file="$CWD/Brewfile"
+    /home/.linuxbrew/bin/brew bundle install --file="$CWD/Brewfile"
 else
     brew bundle install --file="$CWD/Brewfile"
 fi

@@ -19,9 +19,9 @@ rm -f $HOME/.zshrc
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 if [ "$(uname -s)" = "Linux" ]; then
-    /home/.linuxbrew/bin/brew bundle install --file="$CWD/Brewfile"
+    /home/linuxbrew/.linuxbrew/bin/brew bundle install --file="$CWD/Brewfile"
 else
     brew bundle install --file="$CWD/Brewfile"
 fi
 
-source $CWD/stow.sh
+source "$CWD/stow.sh"

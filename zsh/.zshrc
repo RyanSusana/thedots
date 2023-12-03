@@ -36,3 +36,4 @@ source $WORKSPACE_MANAGER/init.sh
 
 export BAT_THEME=OneHalfDark
 
+alias vim=nvim

@@ -1,3 +1,4 @@
 #!/bin/bash
 
-stow "$CWD/zsh"
+stow --dir "$HOME/thedots" zsh
+stow --dir "$HOME/thedots" neovim

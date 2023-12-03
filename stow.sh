@@ -1,5 +1,3 @@
 #!/bin/bash
 
-CWD="$HOME/thedots"
-
-source $CWD/stow_common.sh
+source "$HOME/thedots/stow_common.sh"

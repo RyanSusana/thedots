@@ -22,7 +22,7 @@ mv $BATCAT "$(dirname $BATCAT)/bat"
 # Neovim shit
 git clone --depth 1 -b stable https://github.com/neovim/neovim $HOME/.neovim-source
 pushd $HOME/.neovim-source
-make CMAKE_BUILD_TYPE=RelWithDebInfo 
-make install
+sudo make CMAKE_BUILD_TYPE=RelWithDebInfo 
+sudo -E make install
 rm -rf $HOME/.neovim-source
 popd

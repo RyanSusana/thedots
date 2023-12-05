@@ -1,0 +1,4 @@
+set quickscope
+
+:map { <Action>(MethodUp)
+:map } <Action>(MethodDown)

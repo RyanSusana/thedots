@@ -15,14 +15,14 @@ sudo apt update
 sudo -E apt install -y vim git-all zsh bat duf exa fd-find fzf gum jq stow tldr tmux ninja-build gettext cmake unzip  
 
 FDFIND=$(which fdfind)
-mv $FDFIND "$(dirname $FDFIND)/fd"
+sudo mv $FDFIND "$(dirname $FDFIND)/fd"
 
 BATCAT=$(which batcat)
-mv $BATCAT "$(dirname $BATCAT)/bat"
+sudo mv $BATCAT "$(dirname $BATCAT)/bat"
 # Neovim shit
 git clone --depth 1 -b stable https://github.com/neovim/neovim $HOME/.neovim-source
 pushd $HOME/.neovim-source
-make CMAKE_BUILD_TYPE=RelWithDebInfo 
-make install
-rm -rf $HOME/.neovim-source
+sudo make CMAKE_BUILD_TYPE=RelWithDebInfo 
+sudo -E make install
+sudo rm -rf $HOME/.neovim-source
 popd

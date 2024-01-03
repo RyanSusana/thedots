@@ -1,11 +1,7 @@
 set quickscope
 set scrolloff=12
 
-:map { <Action>(MethodUp)
-:map } <Action>(MethodDown)
-
 let mapleader = " "
-
 
 nmap <leader>gf <Action>(SearchEverywhere)
 

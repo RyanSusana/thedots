@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SRC=${BASH_SOURCE[0]}
+SRC=$BASH_SOURCE[0]
 
 echo $SRC
 

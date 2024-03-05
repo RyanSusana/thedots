@@ -13,7 +13,7 @@ export PATH=$PATH:$GOPATH
 export PATH=$PATH:$GOROOT/bin
 export PATH=$PATH:$GOBIN
 # Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
+export ZSH="$HOME/.nix-profile/share/oh-my-zsh"
 export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
 

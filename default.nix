@@ -1,7 +1,7 @@
 with import <nixpkgs> {};
 
 pkgs.mkShell {
-  buildInputs = [
+  packages = [
     pkgs.vim
     pkgs.htop
     # Other packages you want to include

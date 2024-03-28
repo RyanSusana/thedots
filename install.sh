@@ -18,7 +18,7 @@ git clone https://github.com/ohmyzsh/ohmyzsh.git $HOME/.oh-my-zsh
 echo '-------------------'
 source "$(dirname $SRC)/stow.sh"
 
-THESHELL=`getent passwd $(whoami) | awk -F: '{print $7}'`
+THESHELL=$SHELL
 if [ "$THESHELL" = "/bin/zsh" ] || [ "$THESHELL" = "/usr/bin/zsh" ]; then
     source $HOME/.zshrc
 else

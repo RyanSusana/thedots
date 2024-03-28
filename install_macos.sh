@@ -1,7 +1,9 @@
 #!/bin/bash
+SRC=$BASH_SOURCE[0]
+
 # install homebrew
 NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-/opt/homebrew/bin/brew bundle install --file="$CWD/Brewfile"
+/opt/homebrew/bin/brew bundle install --file="$SRC/Brewfile"
 
 
 # Neovim

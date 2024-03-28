@@ -30,7 +30,7 @@ source $ZSH/oh-my-zsh.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_COMMAND='fd --type f --strip-cwd-prefix'
 
-export WORKSPACE_MANAGER=$HOME/workspace-manager
+export WORKSPACE_MANAGER=$HOME/workspaces
 source $WORKSPACE_MANAGER/init.sh
 
 

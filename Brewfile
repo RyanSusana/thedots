@@ -1,7 +1,7 @@
 tap "homebrew/bundle"
 brew "bat"
 brew "duf"
-brew "exa"
+brew "eza"
 brew "fd"
 brew "fzf"
 brew "gh"

@@ -15,5 +15,6 @@ else
   git clone https://github.com/neovim/neovim neovim-source
   pushd neovim-source && make CMAKE_BUILD_TYPE=RelWithDebInfo
   sudo make install
+  rm -rf neovim-source
   popd
 fi

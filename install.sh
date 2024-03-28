@@ -20,8 +20,8 @@ source "$(dirname $SRC)/stow.sh"
 
 THESHELL=$SHELL
 if [ "$THESHELL" = "/bin/zsh" ] || [ "$THESHELL" = "/usr/bin/zsh" ]; then
-    source $HOME/.zshrc
+    echo "zsh already set"
 else
     chsh -s $(which zsh)
-    zsh
 fi
+zsh

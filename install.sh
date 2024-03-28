@@ -6,6 +6,8 @@ echo $SRC
 
 if [ "$(uname -s)" = "Linux" ]; then
     source "$(dirname $SRC)/install_linux.sh"
+else
+    source "$(dirname $SRC)/install_macos.sh"
 fi
 git clone https://github.com/RyanSusana/workspace-manager $HOME/workspace-manager
 # oh-my-zsh

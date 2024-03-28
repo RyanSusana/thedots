@@ -1,6 +1,9 @@
 #!/bin/bash
 SRC=$BASH_SOURCE[0]
 
+# Nix
+sh <(curl -L https://nixos.org/nix/install)
+
 # install homebrew
 NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 /opt/homebrew/bin/brew bundle install --file="Brewfile"

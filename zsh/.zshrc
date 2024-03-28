@@ -30,7 +30,7 @@ source $ZSH/oh-my-zsh.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_COMMAND='fd --type f --strip-cwd-prefix'
 
-export WORKSPACE_MANAGER=$HOME/workspaces
+export WORKSPACE_MANAGER=$HOME/workspace-manager
 source $WORKSPACE_MANAGER/init.sh
 
 
@@ -39,4 +39,4 @@ export BAT_THEME=OneHalfDark
 alias vim=nvim
 
 
-echo "hello nword"
+echo "The reasonable man adapts himself the world. The unreasonable man persists in adapting the world to himself. Therefor, all progress relies on the unreasonable man."

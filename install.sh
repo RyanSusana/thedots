@@ -11,7 +11,7 @@ else
 fi
 
 # Workspace Manager
-git clone https://github.com/RyanSusana/workspace-manager $HOME/workspaces-manager
+git clone https://github.com/RyanSusana/workspace-manager $HOME/workspace-manager
 
 # oh-my-zsh
 git clone https://github.com/ohmyzsh/ohmyzsh.git $HOME/.oh-my-zsh

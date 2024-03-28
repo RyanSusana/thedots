@@ -12,9 +12,6 @@ fi
 
 # Workspace Manager
 git clone https://github.com/RyanSusana/workspace-manager $HOME/workspaces
-echo 'export WORKSPACE_MANAGER=$HOME/workspaces' >> $HOME/.zshrc
-echo 'source $WORKSPACE_MANAGER/init.sh' >> $HOME/.zshrc
-source $HOME/.zshrc
 
 # oh-my-zsh
 git clone https://github.com/ohmyzsh/ohmyzsh.git $HOME/.oh-my-zsh
